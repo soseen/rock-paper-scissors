@@ -10,16 +10,17 @@ const ResultContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.4em;
-  width: 100%;
+  width: 0;
   height: 100%;
   opacity: 0;
-  max-width: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: opacity 1500ms ease-out, max-width 1500ms ease-out;
+  transition: opacity 800ms ease-out, max-height 800ms ease-out;
 
   &.active {
     opacity: 1;
-    max-width: 100%; /* Adjust this based on your UI */
+    width: 100%;
+    max-height: 100%; /* Adjust this based on your UI */
   }
 `;
 
@@ -52,12 +53,12 @@ const ResultPanel = () => {
   const text = useMemo(() => {
     switch (result) {
       case Result.victory:
-        return "You Win!";
+        return "You Win";
       case Result.defeat:
         return "You Lose";
       case Result.draw:
       default:
-        return "It's a Draw!";
+        return "It's a Draw";
     }
   }, [result]);
   return (

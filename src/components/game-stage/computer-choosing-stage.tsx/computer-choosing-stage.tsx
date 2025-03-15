@@ -84,7 +84,7 @@ const ComputerChoosingStage = () => {
           const randomGesture = getRandomGesture();
           setRollingGesture(randomGesture);
         }, 300);
-      }, 2000);
+      }, 1000);
 
       return () => {
         if (interval) {
@@ -92,18 +92,16 @@ const ComputerChoosingStage = () => {
         }
         clearTimeout(timeout);
       };
-    } else {
-      if (refComputerCoin?.current) {
-        refComputerCoin.current.classList.add("blink");
-      }
     }
   }, [computerGesture]);
 
   useEffect(() => {
     if (result === Result.defeat) {
       refPlayerCoin.current?.classList.add("fadedOut");
+      refComputerCoin.current?.classList.add("blink");
     } else if (result === Result.victory) {
       refComputerCoin.current?.classList.add("fadedOut");
+      refPlayerCoin.current?.classList.add("blink");
     }
   }, [result]);
 
