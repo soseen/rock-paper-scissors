@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     background: var(--background-gradient);
     font-family: "Barlow Semi Condensed", sans-serif;
+    overflow: hidden;
 }
 
 .coin-scissors {
@@ -39,7 +40,7 @@ body {
   background: var(--spock-gradient);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
   body {
     font-size: 9px
   }

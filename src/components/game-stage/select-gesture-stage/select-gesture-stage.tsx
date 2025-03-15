@@ -12,7 +12,7 @@ const BoardContainer = styled.div`
   align-items: center;
   margin-top: 6em;
 
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 580px) {
     width: 260px;
     height: 260px;
   }

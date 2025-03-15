@@ -41,7 +41,7 @@ const GestureCoinContainer = styled.div`
     background: var(--header-outline);
   }
 
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 580px) {
     width: 8em;
     height: 8em;
   }

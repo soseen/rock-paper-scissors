@@ -1,5 +1,6 @@
 import GameStageDisplay from "./components/game-stage/game-stage-display";
 import { GameStateProvider } from "./components/game-state-context/game-state-context";
+import RulesButton from "./components/rules/rules-button/rules-button";
 import ScorePanel from "./components/score-panel/score-panel";
 import GlobalStyle from "./global-style";
 
@@ -25,6 +26,7 @@ const App = () => {
       <GameContainer>
         <ScorePanel />
         <GameStageDisplay />
+        <RulesButton />
       </GameContainer>
     </GameStateProvider>
   );
