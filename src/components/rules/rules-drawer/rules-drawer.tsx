@@ -30,11 +30,6 @@ const Drawer = styled.div`
   &.visible {
     transform: translateY(0);
   }
-
-  @media screen and (max-width: 580px) {
-    padding-top: 12em;
-    padding-bottom: 10em;
-  }
 `;
 
 const Text = styled.p`

@@ -62,6 +62,14 @@ const GestureButtonContainer = styled.div`
 
   &:active {
     transform: translate(var(--x), var(--y)) scale(0.95);
+    background: transparent;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:active {
+    outline: none;
+    background: transparent;
   }
 
   &.button-pressed {
@@ -81,11 +89,13 @@ const GestureButton = ({ type, disabled }: Props) => {
   const { selectGesture, selectedGesture } = useGameStateContext();
 
   const onClick = useCallback(() => {
-    selectGesture(type);
-    if (ref.current) {
-      ref.current.classList.add("button-pressed");
+    if (!selectedGesture) {
+      selectGesture(type);
+      if (ref.current) {
+        ref.current.classList.add("button-pressed");
+      }
     }
-  }, [selectGesture, type]);
+  }, [selectGesture, selectedGesture, type]);
 
   useEffect(() => {
     if (selectedGesture && selectedGesture !== type && ref.current) {

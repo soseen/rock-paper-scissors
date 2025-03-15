@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import IconClose from "../../../images/icon-close.svg";
 import RulesImg from "../../../images/image-rules-bonus.svg";

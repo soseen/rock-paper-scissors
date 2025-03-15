@@ -15,6 +15,7 @@ const GameContainer = styled.div`
   width: 100vw;
   color: white;
   padding: 3em;
+  padding-bottom: 6em;
   box-sizing: border-box;
   gap: 4em;
 `;
