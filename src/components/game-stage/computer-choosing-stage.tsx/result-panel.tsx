@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import styled from "styled-components";
 import { useGameStateContext } from "../../game-state-context/game-state-context";
 import { GameStage } from "../../game-state-context/types";

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useGameStateContext } from "../../game-state-context/game-state-context";
 import styled from "styled-components";
 import { GameGesture, Result } from "../../game-state-context/types";

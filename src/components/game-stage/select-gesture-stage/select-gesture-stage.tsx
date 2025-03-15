@@ -1,4 +1,3 @@
-import React from "react";
 import GestureButton from "../../gesture-button/gesture-button";
 import { GameGesture } from "../../game-state-context/types";
 import PentagonBg from "../../../images/bg-pentagon.svg";

@@ -1,4 +1,3 @@
-import React from "react";
 import { useGameStateContext } from "../game-state-context/game-state-context";
 import styled from "styled-components";
 import { GameGesture } from "../game-state-context/types";

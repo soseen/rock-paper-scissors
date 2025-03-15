@@ -1,4 +1,3 @@
-import React from "react";
 import { useGameStateContext } from "../game-state-context/game-state-context";
 import { GameStage } from "../game-state-context/types";
 import SelectGestureStage from "./select-gesture-stage/select-gesture-stage";
